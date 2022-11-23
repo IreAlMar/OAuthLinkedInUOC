@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Irene Martin's page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" th:href="@{style.css}">
+</head>
+<body>
+<div class="container">
+    <h1 class="center">Prac 1 Application</h1>
+    <div class="row">
+        <div class="col-md-6">
+            <a th:href="${auth_url}" target="_blank" class="btn-link three">3 Legged OAuth</a>
+        </div>
+        <div class="col-md-6">
+            <h5>INFO</h5>
+            <div class="output" id="output"><p th:text="${output}"/></div>
+            <div class="output" id="profileData"><p th:text="${profileData}"/></div>
+            <div class="output" id="profileImage"><img th:src="${profileImage}" alt="alt text" /></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
